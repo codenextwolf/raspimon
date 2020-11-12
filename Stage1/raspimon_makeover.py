@@ -1,14 +1,11 @@
 #Raspimon Academy Lab 3
-from pathlib import Path
-import sys
-p = Path().absolute() #get path to parent dir
-sys.path.append(str(p.parent)) #append to module path
-print(sys.path)
 from sense_hat import SenseHat
 from time import sleep
 from raspimon_images import Raspimons
 
 sense = SenseHat()
+raspis = Raspimons()
+
 
 #makeover time! Here is a Python list. It holds  collection of string values.
 
