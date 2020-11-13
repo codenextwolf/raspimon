@@ -1,7 +1,6 @@
-#Raspimon Academy Lab 5
 from sense_hat import SenseHat
 from time import sleep
-#import the Raspimons package below
+
 
 sense = SenseHat()
 

@@ -1,4 +1,3 @@
-#Raspimon Academy Lab 6
 import sys
 sys.path.append("..")
 from sense_hat import SenseHat
