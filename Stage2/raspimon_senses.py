@@ -1,7 +1,4 @@
-import sys
-sys.path.append("..")
 from sense_hat import SenseHat
-from raspimon_images import Raspimons
 from time import sleep
 
 sense = SenseHat()
@@ -13,6 +10,10 @@ sense = SenseHat()
 
 print(type("Hello!"))
 
+
+
 #make a while True loop
 
-#add conditional statements to test
+
+
+    #add conditional statements to test
