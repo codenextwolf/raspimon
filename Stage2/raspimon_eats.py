@@ -2,7 +2,7 @@ from sense_hat import SenseHat   #import the SenseHat object from the sense_hat 
 from time import sleep 
 from signal import pause
 
-
+#declare variables
 g = (0, 255, 0)
 r = (255, 0, 0)
 w = (255, 255, 255)
@@ -31,3 +31,18 @@ closed_mouth=[
   k, k, k, w, w, k, k, k
     
 ]
+
+
+#set initial position for raspberry and raspimon
+
+
+
+
+#define functions, go_up(), go_down(), go_left() and go_right()
+
+
+
+
+
+
+#define a while loop
