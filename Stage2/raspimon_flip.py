@@ -8,36 +8,47 @@ from time import sleep
 sense = SenseHat()
 
 w = (255,255,255)
-m = (128,0,128)
-b = (0, 0, 0)
+p = (128,0,128)
+k = (0, 0, 0)
 
-rest = [
-        b, b, b, b, b, b, b, b,
-        b, w, w, w, w, w, w, b,
-        b, w, b, b, b, b, w, b,
-        b, w, w, b, w, b, w, b,
-        b, w, b, w, b, b, w, b,
-        b, w, w, w, w, w, w, b,
-        b, b, w, b, w, b, b, b,
-        b, b, w, b, w, b, b, b
+raspimon1 = [
+        k, k, k, k, k, k, k, k,
+        k, w, w, w, w, w, w, k,
+        k, w, k, k, k, k, w, k,
+        k, w, w, k, w, k, w, k,
+        k, w, k, p, k, k, w, k,
+        k, w, w, w, w, w, w, k,
+        k, k, w, k, w, k, k, k,
+        k, k, w, k, w, k, k, k
         ]
+
+raspimon2 = [
+        k, k, k, k, k, k, k, k,
+        k, p, p, p, p, p, k, k,
+        k, p, k, k, k, k, p, k,
+        k, p, w, k, w, k, p, k,
+        k, p, k, w, k, k, p, k,
+        k, p, p, p, p, p, p, k,
+        k, k, p, k, p, k, k, k,
+        k, k, p, k, p, k, k, k
+    ]
+
+
  
-sense.set_pixels(rest)
+sense.set_pixels(raspimon1)
 
 
 
 while True:
     orientation = sense.get_orientation()
     sleep(.2)
-    #print(orientation)
+    print(orientation)
+       
+    #declare a roll variable
     
-    roll = orientation["roll"]
-    #print(str(roll))
     
-    if roll >120 and roll < 180:
-        print("rolled upside down!" + str(roll))
-        sense.flip_v()
-        sleep(1)
+    #write an if statement 
+
         
    
    
